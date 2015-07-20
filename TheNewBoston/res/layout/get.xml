@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <EditText
+        android:id="@+id/etSend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/bSA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="StartActivity" 
+		android:layout_below="@id/etSend"
+		android:onClick="onStartActivityButtonClick" />
+    <Button
+        android:id="@+id/bSAFR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="StartActivityForResult"
+        android:layout_toRightOf="@id/bSA" 
+        android:layout_alignTop="@id/bSA"
+        android:onClick="onStartActivityForResultButtonClick"/>
+
+    <TextView
+        android:id="@+id/tvGot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bSA"
+        android:text="TextView" />
+
+</RelativeLayout>
